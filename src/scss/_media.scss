@@ -1,0 +1,326 @@
+@media (min-width: 801px) {
+  .about-desc {
+    .reverse {
+      flex-direction: row-reverse;
+    }
+    .desc-img {
+      height: auto;
+      margin-bottom: 10rem;
+    }
+    .desc-content {
+      margin-bottom: 10rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
+
+  .menu-section {
+    .menu-card {
+      width: 100%;
+    }
+    .menu-item__title {
+      @include flex(space-between, null);
+    }
+    .menu-item__body {
+      text-align: left;
+    }
+  }
+
+  .reservation {
+    .reser-card {
+      max-width: 100%;
+    }
+  }
+
+  .contact {
+    .contact-info {
+      padding: 0 3rem;
+      .contact-date {
+        margin: 4rem 0 5rem;
+        .contact-date__detail {
+          @include flex(space-between, null);
+        }
+      }
+    }
+  }
+  .back-to-top {
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav {
+    .nav-bar {
+      width: 90%;
+      .nav-list {
+        position: unset;
+        flex-direction: row;
+        transform: none;
+        visibility: visible;
+        background: transparent;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 1;
+        .nav-item {
+          border: none;
+          width: unset;
+          margin: 0;
+          .nav-link {
+            padding: 2rem;
+            font-size: 1.5rem;
+          }
+        }
+        .nav-item:last-child {
+          .nav-search {
+            .search-full {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              padding: 0 50px;
+              height: 100%;
+              background: rgba(255, 255, 255, 0.98);
+              @include flex(space-between, center);
+              opacity: 0;
+              visibility: hidden;
+              transition: 0.3s ease-out;
+              input {
+                flex: 1;
+                outline: none;
+                border: none;
+                border-radius: 0;
+                font-weight: 400;
+                color: #646464;
+                margin: 0;
+                height: 100%;
+                background: transparent;
+                font-size: 2.4rem;
+              }
+              .fas {
+                cursor: pointer;
+                font-size: 2.4rem;
+              }
+              .fa-search {
+                color: #ff7417;
+                margin-right: 2rem;
+              }
+            }
+            .search-full.show {
+              opacity: 1;
+              visibility: visible;
+            }
+
+            .search-half {
+              margin: 0 2rem;
+              input {
+                display: none;
+              }
+            }
+            .search-social {
+              display: flex;
+              a {
+                margin: 0 1rem;
+              }
+            }
+          }
+        }
+      }
+      .nav-hamburger {
+        display: none;
+      }
+    }
+  }
+  .nav.sticky {
+    .nav-list {
+      .nav-link {
+        color: #000;
+      }
+      .nav-link:hover {
+        color: #dd9933;
+      }
+    }
+    .search-social {
+      a {
+        color: #000 !important;
+      }
+    }
+  }
+  // home-section
+  .home {
+    .home-title {
+      img {
+        top: -12px;
+        right: 57px;
+        width: 30px;
+      }
+      h4 {
+        font-size: 6.5rem;
+      }
+    }
+    .home-body {
+      h1 {
+        font-size: 12.5rem;
+      }
+    }
+    .home-scroll-icon {
+      bottom: 15%;
+      border: 2px solid #fff;
+      border-radius: 50px;
+      cursor: pointer;
+      width: 40px;
+      height: 65px;
+      span {
+        width: 8px;
+        height: 8px;
+        animation: translateDot 2.5s infinite ease-out;
+      }
+      @keyframes translateDot {
+        0% {
+          transform: translate(-50%, -15px);
+          opacity: 1;
+        }
+        15% {
+          opacity: 1;
+          transform: translate(-50%, 10px);
+        }
+        50% {
+          opacity: 0;
+          transform: translate(-50%, 10px);
+        }
+        100% {
+          transform: translate(-50%, -15px);
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  .about-us {
+    .card-offer {
+      .offer-img,
+      .offer-body {
+        max-width: 90%;
+      }
+    }
+  }
+
+  .menu-section {
+    .menu-body {
+      flex-direction: row !important;
+      h1 {
+        text-align: left;
+      }
+      .menu-start,
+      .menu-main {
+        flex: 50%;
+        max-width: 50%;
+        padding: 0 20px;
+      }
+    }
+  }
+
+  //
+  .reservation {
+    .reser-body {
+      flex-direction: row !important;
+      .reser-control {
+        padding: 0 20px;
+        label {
+          padding-left: 45px !important;
+        }
+      }
+    }
+  }
+
+  .contact {
+    padding: 10rem 0 0;
+    margin: -10rem 0 0;
+    .contact-info {
+      padding: 0 6rem;
+    }
+    .contact-map {
+      height: 900px;
+    }
+  }
+  .back-to-top {
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav {
+    height: 12rem;
+    .nav-link {
+      padding: 2rem 2.5rem !important;
+      font-size: 1.8rem !important;
+    }
+  }
+  .about-us {
+    .card-offer {
+      .offer-img {
+        max-width: 100%;
+      }
+      .offer-body {
+        max-width: 100%;
+        h3 {
+          margin: 2rem 0;
+        }
+      }
+    }
+  }
+  .about-desc {
+    .reverse {
+      flex-direction: row-reverse;
+    }
+    .desc-img {
+      height: auto;
+      margin-bottom: 10rem;
+    }
+    .desc-content {
+      @include flex-col(center);
+      text-align: left;
+      max-width: 400px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 14rem;
+      .desc-icon {
+        left: 0;
+        transform: translateX(0);
+        font-size: 65rem;
+      }
+      p {
+        margin: 6rem 0;
+      }
+      a {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    .desc-content.second {
+      align-items: flex-end;
+      text-align: right;
+      margin-right: 14rem;
+      margin-left: 0;
+      .desc-icon {
+        right: 0;
+        left: unset;
+      }
+    }
+  }
+  .menu-section {
+    .menu-card {
+      padding: 10rem 5rem;
+      .menu-body {
+        margin: 6rem 0;
+        .menu-item {
+          margin-top: 5rem;
+        }
+      }
+    }
+  }
+  .menu-section:after {
+    background-size: contain;
+  }
+}

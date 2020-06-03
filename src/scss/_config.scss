@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+/*Basic reset*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Custom properties*/
+:root {
+  --dark-color: #2d2c2c;
+  --purple-solid: #350a4f;
+  --purple-transparent: rgba(54, 19, 84, 0.6);
+  --purple-transparent-alt: rgba(53, 10, 79, 0.5);
+  --purple-light: #8f50fb;
+  --yellow-solid: #fa9e2c;
+  --gradient-color: linear-gradient(
+    to right,
+    var(--yellow-solid),
+    var(--purple-light)
+  );
+  --gradient-color-alt: linear-gradient(
+    to right,
+    var(--purple-light),
+    var(--yellow-solid)
+  );
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}

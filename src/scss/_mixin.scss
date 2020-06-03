@@ -1,0 +1,21 @@
+@mixin flex($justify: flex-start, $align: flex-start) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flex-col($justify: flex-start, $align: flex-start) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: column;
+}
+
+@mixin pseudo100($top: 0, $left: 0) {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: $top;
+  left: $left;
+}

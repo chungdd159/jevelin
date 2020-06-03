@@ -1,0 +1,136 @@
+// about-us-card
+.card-offer.move-in.show {
+  animation: moveIn ease 2.5s forwards;
+}
+
+.card-offer.move-out.show {
+  animation: moveOut ease 2.5s forwards;
+}
+
+.card-offer.move-up.show {
+  animation: moveUp ease 2.5s forwards;
+}
+
+// desc-section
+.desc-img.fade-in.show {
+  animation: fadeIn ease-out 2s forwards;
+}
+
+.desc-img.fade-out.show {
+  animation: fadeOut ease-out 2s forwards;
+}
+
+// menu-section
+.menu-card.move-up.show {
+  animation: moveUp ease-out 2s forwards;
+}
+
+.reser-card.move-up.show {
+  animation: moveUp ease-out 2s forwards;
+}
+
+// home-section
+.home-page {
+  img.move-down.show {
+    animation: moveDownImg ease-in 2s forwards;
+  }
+  h4.fade.show,
+  p.fade.show {
+    animation: fade ease 3s forwards;
+  }
+
+  h1.fade-in.show {
+    animation: fadeIn ease-out 2s forwards;
+  }
+  h1.fade-out.show {
+    animation: fadeOut ease-out 2s forwards;
+  }
+}
+
+.home-scroll-icon.fade.show {
+  animation: fade ease 3s forwards;
+}
+
+// contact..
+.contact-map.fade-out.show {
+  animation: fadeOut ease-out 2.5s forwards;
+}
+
+.contact-info.fade-in.show {
+  animation: fadeIn ease-out 2.5s forwards;
+}
+
+@keyframes moveIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveOut {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveDownImg {
+  0% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+  90% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
