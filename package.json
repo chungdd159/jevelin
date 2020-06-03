@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "homepage": "https://chungdd159.github.io/jevelin",
   "scripts": {
-    "deploy": "npm run build&&gh-pages -d dist",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open"
