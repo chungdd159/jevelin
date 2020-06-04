@@ -13,22 +13,6 @@
 }
 /*Custom properties*/
 :root {
-  --dark-color: #2d2c2c;
-  --purple-solid: #350a4f;
-  --purple-transparent: rgba(54, 19, 84, 0.6);
-  --purple-transparent-alt: rgba(53, 10, 79, 0.5);
-  --purple-light: #8f50fb;
-  --yellow-solid: #fa9e2c;
-  --gradient-color: linear-gradient(
-    to right,
-    var(--yellow-solid),
-    var(--purple-light)
-  );
-  --gradient-color-alt: linear-gradient(
-    to right,
-    var(--purple-light),
-    var(--yellow-solid)
-  );
 }
 
 html {
